@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[1.1:19]","start":1731199677492,"end":1731199678514,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[1.1:19] 19:47:57.492-19:47:58.514 Get geographical data of a country"},{"id":2,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[1.2:20]","start":1731199678519,"end":1731199678905,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[1.2:20] 19:47:58.519-19:47:58.905 Get geographical data of a country"},{"id":3,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[1.3:21]","start":1731199678909,"end":1731199679280,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[1.3:21] 19:47:58.909-19:47:59.280 Get geographical data of a country"},{"id":4,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[1.4:22]","start":1731199679284,"end":1731199679667,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[1.4:22] 19:47:59.284-19:47:59.667 Get geographical data of a country"},{"id":5,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[1.5:23]","start":1731199679671,"end":1731199680059,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[1.5:23] 19:47:59.671-19:48:00.059 Get geographical data of a country"},{"id":6,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[2.1:32]","start":1731199680062,"end":1731199680444,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[2.1:32] 19:48:00.062-19:48:00.444 Get geographical data of a Colombia","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[3.1:41]","start":1731199680448,"end":1731199680810,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[3.1:41] 19:48:00.448-19:48:00.810 Get geographical data of a country with invalid parameters"},{"id":8,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[3.2:42]","start":1731199680813,"end":1731199681178,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[3.2:42] 19:48:00.813-19:48:01.178 Get geographical data of a country with invalid parameters"},{"id":9,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[3.3:43]","start":1731199681181,"end":1731199681547,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[3.3:43] 19:48:01.181-19:48:01.547 Get geographical data of a country with invalid parameters"},{"id":10,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[3.4:44]","start":1731199681550,"end":1731199681915,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[3.4:44] 19:48:01.550-19:48:01.915 Get geographical data of a country with invalid parameters"},{"id":11,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[3.5:45]","start":1731199681917,"end":1731199682281,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[3.5:45] 19:48:01.917-19:48:02.281 Get geographical data of a country with invalid parameters"},{"id":12,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[3.6:46]","start":1731199682284,"end":1731199682647,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[3.6:46] 19:48:02.284-19:48:02.647 Get geographical data of a country with invalid parameters"},{"id":13,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[3.7:47]","start":1731199682650,"end":1731199683016,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[3.7:47] 19:48:02.650-19:48:03.016 Get geographical data of a country with invalid parameters"},{"id":14,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[3.8:48]","start":1731199683019,"end":1731199683386,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[3.8:48] 19:48:03.019-19:48:03.386 Get geographical data of a country with invalid parameters"},{"id":15,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[4.1:57]","start":1731199683389,"end":1731199683866,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[4.1:57] 19:48:03.389-19:48:03.866 Get geographical data of a country that does not have information"},{"id":16,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[4.2:58]","start":1731199683868,"end":1731199684242,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[4.2:58] 19:48:03.868-19:48:04.242 Get geographical data of a country that does not have information"},{"id":17,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[5.1:67]","start":1731199684245,"end":1731199684607,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[5.1:67] 19:48:04.245-19:48:04.607 Get geographical data of country with invalid latitude and longitude"},{"id":18,"group":1,"content":"src\/test\/java\/geonames\/get\/geographical-data-get[5.2:68]","start":1731199684609,"end":1731199684976,"title":"src\/test\/java\/geonames\/get\/geographical-data-get[5.2:68] 19:48:04.609-19:48:04.976 Get geographical data of country with invalid latitude and longitude"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
