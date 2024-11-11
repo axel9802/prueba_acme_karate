@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"geonames\/get\/geographical-data-get[1.1:19]","start":1731304811943,"end":1731304813251,"title":"geonames\/get\/geographical-data-get[1.1:19] 01:00:11.943-01:00:13.251 Get geographical data of a country"},{"id":2,"group":2,"content":"geonames\/get\/geographical-data-get[1.2:20]","start":1731304811943,"end":1731304813241,"title":"geonames\/get\/geographical-data-get[1.2:20] 01:00:11.943-01:00:13.241 Get geographical data of a country"},{"id":3,"group":3,"content":"geonames\/get\/geographical-data-get[1.3:21]","start":1731304811943,"end":1731304813241,"title":"geonames\/get\/geographical-data-get[1.3:21] 01:00:11.943-01:00:13.241 Get geographical data of a country"},{"id":4,"group":4,"content":"geonames\/get\/geographical-data-get[1.4:22]","start":1731304811943,"end":1731304813241,"title":"geonames\/get\/geographical-data-get[1.4:22] 01:00:11.943-01:00:13.241 Get geographical data of a country"},{"id":5,"group":3,"content":"geonames\/get\/geographical-data-get[1.5:23]","start":1731304813250,"end":1731304813642,"title":"geonames\/get\/geographical-data-get[1.5:23] 01:00:13.250-01:00:13.642 Get geographical data of a country"},{"id":6,"group":4,"content":"geonames\/get\/geographical-data-get[2.1:32]","start":1731304813250,"end":1731304813644,"title":"geonames\/get\/geographical-data-get[2.1:32] 01:00:13.250-01:00:13.644 Get geographical data of a Colombia"},{"id":7,"group":2,"content":"geonames\/get\/geographical-data-get[3.1:41]","start":1731304813250,"end":1731304813626,"title":"geonames\/get\/geographical-data-get[3.1:41] 01:00:13.250-01:00:13.626 Get geographical data of a country with invalid parameters"},{"id":8,"group":1,"content":"geonames\/get\/geographical-data-get[3.2:42]","start":1731304813257,"end":1731304813624,"title":"geonames\/get\/geographical-data-get[3.2:42] 01:00:13.257-01:00:13.624 Get geographical data of a country with invalid parameters"},{"id":9,"group":1,"content":"geonames\/get\/geographical-data-get[3.3:43]","start":1731304813629,"end":1731304813990,"title":"geonames\/get\/geographical-data-get[3.3:43] 01:00:13.629-01:00:13.990 Get geographical data of a country with invalid parameters"},{"id":10,"group":2,"content":"geonames\/get\/geographical-data-get[3.4:44]","start":1731304813631,"end":1731304813997,"title":"geonames\/get\/geographical-data-get[3.4:44] 01:00:13.631-01:00:13.997 Get geographical data of a country with invalid parameters"},{"id":11,"group":3,"content":"geonames\/get\/geographical-data-get[3.5:45]","start":1731304813647,"end":1731304814011,"title":"geonames\/get\/geographical-data-get[3.5:45] 01:00:13.647-01:00:14.011 Get geographical data of a country with invalid parameters"},{"id":12,"group":4,"content":"geonames\/get\/geographical-data-get[3.6:46]","start":1731304813649,"end":1731304814017,"title":"geonames\/get\/geographical-data-get[3.6:46] 01:00:13.649-01:00:14.017 Get geographical data of a country with invalid parameters"},{"id":13,"group":1,"content":"geonames\/get\/geographical-data-get[3.7:47]","start":1731304813993,"end":1731304814357,"title":"geonames\/get\/geographical-data-get[3.7:47] 01:00:13.993-01:00:14.357 Get geographical data of a country with invalid parameters"},{"id":14,"group":2,"content":"geonames\/get\/geographical-data-get[3.8:48]","start":1731304814001,"end":1731304814361,"title":"geonames\/get\/geographical-data-get[3.8:48] 01:00:14.001-01:00:14.361 Get geographical data of a country with invalid parameters"},{"id":15,"group":3,"content":"geonames\/get\/geographical-data-get[4.1:57]","start":1731304814016,"end":1731304814388,"title":"geonames\/get\/geographical-data-get[4.1:57] 01:00:14.016-01:00:14.388 Get geographical data of a country that does not have information"},{"id":16,"group":4,"content":"geonames\/get\/geographical-data-get[4.2:58]","start":1731304814021,"end":1731304814388,"title":"geonames\/get\/geographical-data-get[4.2:58] 01:00:14.021-01:00:14.388 Get geographical data of a country that does not have information"},{"id":17,"group":1,"content":"geonames\/get\/geographical-data-get[5.1:67]","start":1731304814359,"end":1731304814729,"title":"geonames\/get\/geographical-data-get[5.1:67] 01:00:14.359-01:00:14.729 Get geographical data of country with invalid latitude and longitude"},{"id":18,"group":2,"content":"geonames\/get\/geographical-data-get[5.2:68]","start":1731304814365,"end":1731304814732,"title":"geonames\/get\/geographical-data-get[5.2:68] 01:00:14.365-01:00:14.732 Get geographical data of country with invalid latitude and longitude"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
